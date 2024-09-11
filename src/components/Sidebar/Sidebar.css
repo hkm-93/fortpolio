@@ -1,0 +1,59 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 90px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navigation {
+    width: 30px;
+    height: 30px;
+    padding: 2px 25px;
+    background: linear-gradient(to right, #4a4a4a, #cccccc);
+    position: relative;
+    left: -20px;
+    transition: background 0.3s ease, left 0.3s ease;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 25% 50%);
+    overflow: hidden;
+}
+
+.navigation::after {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.navigation.active {
+    color: white;
+    width: 120px;
+    clip-path: polygon(0 0, 90% 0%, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+}
+
+.navigation.active::after {
+    opacity: 1;
+}
+
+.worklife {
+    background: linear-gradient(120deg, #ffbac6 30%, #ff4463 100%);
+}
+
+.loweffort {
+    background: linear-gradient(120deg, #80deea 30%, #c8f7ff 100%);
+}
+
+.gigachad {
+    background: linear-gradient(120deg, #a5d6a7 30%, #b3ffbe 100%);
+}
+

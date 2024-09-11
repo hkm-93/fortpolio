@@ -1,0 +1,19 @@
+.theme-worklife {
+    --background-color: linear-gradient( 120deg, #ff92a2 30%, #ffe7eb 100%) no-repeat fixed;
+    --text-color: #333;
+}
+
+.theme-loweffort {
+    --background-color: linear-gradient( 120deg, #4cbfcd 30%, #caf5fb 100%) no-repeat fixed;
+    --text-color: #333;
+}
+
+.theme-gigachad {
+    --background-color: linear-gradient( 120deg, #71cd76 30%, #e6ffe9 100%) no-repeat fixed;
+    --text-color: #333;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
